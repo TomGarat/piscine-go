@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func Fibonacci(index int) int {
+
+	if index <= 1 {
+		return index
+	}
+	return Fibonacci(index-1) + Fibonacci(index-2)
+}
+
+func main() {
+	arg1 := 4
+	fmt.Println(Fibonacci(arg1))
+}
